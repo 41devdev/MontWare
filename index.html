@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>41Hub.cc • @uvyt</title>
+  <link rel="icon" type="image/x-icon" href="logo.ico">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+      background-color: #0b0b0b;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .panel {
+      background: #141414;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 40px rgba(0,0,0,0.6);
+      width: 90%;
+      max-width: 900px;
+      text-align: center;
+      position: relative;
+      animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    header {
+      margin-bottom: 20px;
+    }
+
+    header .title {
+      font-size: 26px;
+      font-weight: bold;
+      animation: pulse 3s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { color: #fff; }
+      50% { color: #ff006e; }
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 28px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      background: #5865F2;
+      border-radius: 40px;
+      text-decoration: none;
+      box-shadow: 0 0 20px rgba(88,101,242,0.5);
+      transition: all 0.3s ease;
+      animation: pulseBtn 3s infinite;
+    }
+
+    .download-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 30px rgba(88,101,242,0.8);
+    }
+
+    @keyframes pulseBtn {
+      0%, 100% { background: #5865F2; }
+      50% { background: #4752C4; }
+    }
+
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .screenshot-container {
+      overflow: hidden;
+      border-radius: 15px;
+      margin: 20px auto;
+      max-width: 650px; /* küçültüldü */
+      box-shadow: 0 0 25px rgba(255,255,255,0.08);
+    }
+
+    .screenshot {
+      width: 100%;
+      display: block;
+      animation: slideSide 6s ease-in-out infinite alternate;
+    }
+
+    @keyframes slideSide {
+      0% { transform: translateX(-12px); }
+      100% { transform: translateX(12px); }
+    }
+
+    footer {
+      margin-top: 25px;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    .footer-logo {
+      width: 48px; /* logo.ico büyütüldü */
+      height: 48px;
+      margin: 10px auto;
+      display: block;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+
+    .discord-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 28px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      background: #5865F2;
+      border-radius: 40px;
+      text-decoration: none;
+      box-shadow: 0 0 20px rgba(88,101,242,0.5);
+      transition: all 0.3s ease;
+      animation: pulseBtn 3s infinite;
+    }
+
+    .discord-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 30px rgba(88,101,242,0.8);
+    }
+
+    @keyframes pulseBtn {
+      0%, 100% { background: #5865F2; }
+      50% { background: #4752C4; }
+    }
+  </style>
+</head>
+<body>
+  <div class="panel">
+    <header>
+      <div class="title">41Hub.cc • @uvyt</div>
+    </header>
+
+    <a href="https://store2.gofile.io/download/web/e9ede5e5-ed7a-4ad6-b9cd-978eb723e8ea/MontWare.rar"
+       class="download-btn" target="_blank">
+       Download
+    </a>
+
+    <div class="screenshot-container">
+      <img src="Screenshot 2025-10-03 065900.png" alt="MontWare Screenshot" class="screenshot">
+    </div>
+
+    <footer>
+      %98 UNC • Powered By VelocityAPI
+      <img src="logo.ico" alt="logo" class="footer-logo">
+      <a class="discord-btn" href="https://discord.gg/YhNwRsYEaZ" target="_blank">Join Discord</a>
+    </footer>
+  </div>
+</body>
+</html>
